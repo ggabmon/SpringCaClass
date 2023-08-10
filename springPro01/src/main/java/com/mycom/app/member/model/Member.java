@@ -9,6 +9,7 @@ public class Member {
 	private String name;
 	private Date regdate;
 	private String isshow;
+	//getter와 setter들
 	public int getNo() {
 		return no;
 	}
@@ -47,6 +48,8 @@ public class Member {
 	}
 	public Member() {
 	}
+	
+	//정보 전달을 위한 생성자
 	public Member(int no, String memberid, String password, String name, Date regdate, String isshow) {
 		this.no = no;
 		this.memberid = memberid;
@@ -55,6 +58,15 @@ public class Member {
 		this.regdate = regdate;
 		this.isshow = isshow;
 	}
+		
+	//회원 가입을 위한 생성자
+	public Member(String memberid, String password, String name) {
+		super();
+		this.memberid = memberid;
+		this.password = password;
+		this.name = name;
+	}
+	
 	@Override
 	public String toString() {
 		return "member [no=" + no + ", memberid=" + memberid + ", password=" + password + ", name=" + name

@@ -10,7 +10,7 @@
 <title>회원 정보 불러오기</title>
 </head>
 <body>
-<h2>제발 나타나줘라</h2>
+<h2>회원 상세 조회</h2>
 
 <table border="1">
 	<tbody>
@@ -39,8 +39,8 @@
 		<tr>
 			<td colspan="2">
 			<a href="${cPath}/member/list?pageNo=1">목록보기</a>
-			<a href="${cPath}/member/modify?memberNo=${member.no}">수정(수정 폼 보여줄것)</a>
-			<a href="${cPath}/member/modify?memberNo=${member.no}">삭제</a>
+			<a href="${cPath}/member/modify?memberId=${member.memberid}">수정(수정 폼 보여줄것)</a>
+			<a href="${cPath}/member/delete?no=${member.no}">삭제</a>
 		</tr>
 	</tbody>
 </table>

@@ -27,4 +27,44 @@
 	from member
 	]]>
 	</select>
+	<!-- 유저전체 조회 -->
+	<select id="listMember2" resultType="map">
+	<![CDATA[
+	select *
+	from member
+	]]>
+	</select>
+	<!-- 선택유저 조회 -->
+	<select id="selectById" resultType="Member"
+	parameterType="string">
+	<![CDATA[
+	select *
+	from member
+	where memberid=#{memberid}
+	]]>
+	</select>
+	
+	<!-- 선택유저 삭제 -->
+	<select id="deleteMemberByNo" parameterType="int">
+	<![CDATA[
+	delete from member
+	where no=#{no}
+	]]>
+	</select>
+	
+	<!-- 회원가입 -->
+	<select id="join" parameterType="Member">
+	<![CDATA[
+	insert into member(memberid, password, name)
+	values(#{memberid}, #{password}, #{name})
+	]]>
+	</select>
+	
+	<!-- 정보수정 -->
+	<select id="update" parameterType="int">
+	<![CDATA[
+	
+	]]>
+	</select>
+	
 </mapper>

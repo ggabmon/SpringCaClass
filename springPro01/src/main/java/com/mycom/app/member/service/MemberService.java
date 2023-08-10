@@ -33,4 +33,26 @@ public class MemberService {
 		List<HashMap<String, Object>> memberList = memberRepository.memberList2(pageNo);
 		return memberList;
 	}
+
+	//회원의 아이디를 입력받아서 그 아이디에 대한 상세 정보 받아오기
+	public Member selectMemberById(String memberId) {
+		Member member = memberRepository.selectMemberById(memberId);
+		return member;
+	}
+	
+	//회원의 상세페이지에서 그 회원의 정보를 삭제하기 버튼
+	public int deleteMemberByNo(int no) {
+		int delCnt = memberRepository.deleteMemberByNo(no);
+		return delCnt;
+	}
+
+	public int join(Member member) {
+		int joinCnt = memberRepository.join(member);
+		return joinCnt;
+	}
+
+	public int update(int no) {
+		int updateCnt = memberRepository.update(no);
+		return updateCnt;
+	}
 }
