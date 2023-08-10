@@ -15,7 +15,10 @@
 <P>  The time on the server is ${serverTime}. </P>
 </c:if>
 <c:if test="${empty name}">
-이름이 없어...
+<br>
+name이 없을때 뜬다.
+<br>
 </c:if>
+number=${number}
 </body>
 </html>
