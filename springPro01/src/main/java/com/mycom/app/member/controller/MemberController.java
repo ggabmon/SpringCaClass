@@ -54,12 +54,6 @@ public class MemberController {
 		return "listMember";
 	}
 	
-	//회원의 정보를 수정하는 메서드
-	@RequestMapping("/member/modify")
-	public String memberModify(@RequestParam int memberNo) {
-		
-		return "";
-	}
 		
 	//회원의 아이디를 누르면 그 아이디에 대한 상세 정보 받아오기
 	@RequestMapping("/member/detail")
@@ -111,10 +105,14 @@ public class MemberController {
 	
 	//정보수정 메서드
 	@RequestMapping("/member/update")
-	public ModelAndView update(	ModelAndView mv
-									
+	public ModelAndView update(	ModelAndView mv,
+			@RequestParam String memberId,
+			@RequestParam String password,
+			@RequestParam String name,
+			@RequestParam int no
 									) {
-		int updateCnt = memberService.update(0);
+		Member member = new Member(no, memberId, password, name);
+		int updateCnt = memberService.update(member);
 		return mv;
 	}
 	

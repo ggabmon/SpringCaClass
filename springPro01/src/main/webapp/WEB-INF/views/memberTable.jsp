@@ -39,7 +39,7 @@
 		<tr>
 			<td colspan="2">
 			<a href="${cPath}/member/list?pageNo=1">목록보기</a>
-			<a href="${cPath}/member/modify?memberId=${member.memberid}">수정(수정 폼 보여줄것)</a>
+			<a href="${cPath}/member/updateForm?memberId=${member.memberid}">수정(수정 폼 보여줄것)</a>
 			<a href="${cPath}/member/delete?no=${member.no}">삭제</a>
 		</tr>
 	</tbody>

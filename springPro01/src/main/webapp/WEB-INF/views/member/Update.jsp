@@ -9,7 +9,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-	$("#joinBtn").on("click", function(){
+	$("#updateBtn").on("click", function(){
 		 //input 값 변수선언
 		 var memberId = $("#memberId").val();
          var password = $("#password").val();
@@ -38,6 +38,7 @@ $(document).ready(function(){
 <body>
 	<h2>회원 정보 수정 페이지</h2>
 	<form action="${cPath}/member/join" method="post" id="memberUpdateForm">
+		<input type="hidden" name="no" value="${member.no }">
 		<p>
 			<label for="memberId">아이디</label>
 			<input type="text" name="memberId" id="memberId" required="required" value="${member.memberid}">

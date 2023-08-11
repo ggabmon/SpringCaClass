@@ -61,9 +61,11 @@
 	</select>
 	
 	<!-- 정보수정 -->
-	<select id="update" parameterType="int">
+	<select id="update" parameterType="Member">
 	<![CDATA[
-	
+	UPDATE member
+	set memberid=#{memberid}, password=#{password}, name=#{name}
+	where no = ${no}
 	]]>
 	</select>
 	

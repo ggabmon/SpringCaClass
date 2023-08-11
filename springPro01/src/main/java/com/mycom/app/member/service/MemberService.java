@@ -51,8 +51,8 @@ public class MemberService {
 		return joinCnt;
 	}
 
-	public int update(int no) {
-		int updateCnt = memberRepository.update(no);
+	public int update(Member member) {
+		int updateCnt = memberRepository.update(member);
 		return updateCnt;
 	}
 }

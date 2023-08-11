@@ -67,6 +67,13 @@ public class Member {
 		this.name = name;
 	}
 	
+	public Member(int no, String memberid, String password, String name) {
+		super();
+		this.no = no;
+		this.memberid = memberid;
+		this.password = password;
+		this.name = name;
+	}
 	@Override
 	public String toString() {
 		return "member [no=" + no + ", memberid=" + memberid + ", password=" + password + ", name=" + name

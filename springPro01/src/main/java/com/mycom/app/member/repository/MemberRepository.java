@@ -51,8 +51,8 @@ public class MemberRepository {
 		return joinCnt;
 	}
 
-	public int update(int no) {
-		int updateCnt = sqlSession.insert("member.update",no);
+	public int update(Member member) {
+		int updateCnt = sqlSession.insert("member.update",member);
 		return updateCnt;
 	}
 }
