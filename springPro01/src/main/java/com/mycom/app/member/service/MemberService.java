@@ -40,7 +40,7 @@ public class MemberService {
 		return member;
 	}
 	
-	//회원의 상세페이지에서 그 회원의 정보를 삭제하기 버튼
+	//회원의 상세페이지에서 그 회원의 정보를 삭제
 	public int deleteMemberByNo(int no) {
 		int delCnt = memberRepository.deleteMemberByNo(no);
 		return delCnt;
@@ -51,6 +51,7 @@ public class MemberService {
 		return joinCnt;
 	}
 
+	//회원의 정보를 수정
 	public int update(Member member) {
 		int updateCnt = memberRepository.update(member);
 		return updateCnt;

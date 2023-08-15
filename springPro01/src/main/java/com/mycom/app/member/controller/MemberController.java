@@ -113,6 +113,7 @@ public class MemberController {
 									) {
 		Member member = new Member(no, memberId, password, name);
 		int updateCnt = memberService.update(member);
+		mv.setViewName("redirect:/member/list");
 		return mv;
 	}
 	

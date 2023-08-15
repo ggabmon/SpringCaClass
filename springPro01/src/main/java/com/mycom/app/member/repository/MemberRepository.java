@@ -51,6 +51,7 @@ public class MemberRepository {
 		return joinCnt;
 	}
 
+	//회원의 정보를 수정
 	public int update(Member member) {
 		int updateCnt = sqlSession.insert("member.update",member);
 		return updateCnt;

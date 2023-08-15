@@ -37,7 +37,7 @@ $(document).ready(function(){
 </head>
 <body>
 	<h2>회원 정보 수정 페이지</h2>
-	<form action="${cPath}/member/join" method="post" id="memberUpdateForm">
+	<form action="${cPath}/member/update" method="post" id="memberUpdateForm">
 		<input type="hidden" name="no" value="${member.no }">
 		<p>
 			<label for="memberId">아이디</label>
