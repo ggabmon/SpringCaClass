@@ -40,7 +40,7 @@ public class MemberController {
 	@RequestMapping("/member/list") // 목록가져오기 : get방식으로
 	public String memberList(@RequestParam(required = false, defaultValue = "1") int pageNo
 			, Model model) {
-		List<Member> memberList = memberService.memberList(pageNo);
+		List<Member> memberList = memberService.memberList();
 		model.addAttribute("memberList",memberList);
 		return "listMember";
 	}

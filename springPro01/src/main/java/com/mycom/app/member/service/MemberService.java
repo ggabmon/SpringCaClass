@@ -24,8 +24,8 @@ public class MemberService {
 		return member;
 	}
 
-	public List<Member> memberList(int pageNo) {
-		List<Member> memberList = memberRepository.memberList(pageNo);
+	public List<Member> memberList() {
+		List<Member> memberList = memberRepository.memberList();
 		return memberList;
 	}
 

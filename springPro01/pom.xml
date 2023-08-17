@@ -245,6 +245,13 @@
 		      </dependency>
 		
 		<!-- 230807에 추가한 dependency 5번째 끝 -->
+		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+				<dependency>
+				    <groupId>org.projectlombok</groupId>
+				    <artifactId>lombok</artifactId>
+				    <version>1.18.24</version>
+				    <scope>provided</scope>
+				</dependency>
 		
 		
 	</dependencies>

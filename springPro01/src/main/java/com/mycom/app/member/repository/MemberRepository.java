@@ -24,7 +24,7 @@ public class MemberRepository {
 		return member;
 	}
 
-	public List<Member> memberList(int pageNo) {
+	public List<Member> memberList() {
 		List<Member> memberList = sqlSession.selectList("member.listMember");
 		return memberList;
 	}

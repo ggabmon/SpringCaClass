@@ -128,7 +128,7 @@ public class HomeController {
 		hobbies.add("춤추기");
 		hobbies.add("신나게놀기");
 		hobbies.add("클라이밍");
-		TestDTO testDTO = new TestDTO("이름", hobbies, 2, "내용", "태풍") ;
+		TestDTO testDTO = new TestDTO("이름", hobbies, 2, "내용", "태풍");
 		model.addAttribute("MODMOD2", testDTO);
 		
 		//속성명은 model값의 타입으로 사용되는 bean과 동일할 때에는 생략할 수 있다.
