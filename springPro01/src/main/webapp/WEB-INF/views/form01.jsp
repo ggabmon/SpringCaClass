@@ -1,9 +1,3 @@
-<%-- 
-	<%@ %>은 지시어(directive)부분
-	<%@ page %>  page directive.페이지지시어
-							 jsp페이지에 대한 정보를 지정.
-							 jsp페이지가 생성하는 문서의 타입,에러페이지 등 jsp페이지에서 필요로 하는 정보 설정
-    --%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
